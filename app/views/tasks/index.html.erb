@@ -1,0 +1,7 @@
+<h1>Your Tasks</h1>
+
+<% @tasks.each do |task| %>
+<ul>
+<li><%= "#{task.completed ? "✅" : "🔴"} - #{task.title}"%></li>
+</ul>
+<% end %>
